@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export const Giftem = ({ title, url }) => {
   return (
@@ -8,3 +9,8 @@ export const Giftem = ({ title, url }) => {
     </div>
   );
 };
+
+Giftem.propTypes ={
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+}
